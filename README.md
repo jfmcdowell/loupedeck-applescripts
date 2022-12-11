@@ -7,7 +7,8 @@ If/when Microsoft adds [global hotkey / shortcut support](https://microsoftteams
 There are three AppleScripts included here bringing the following functionality to Microsoft Teams:
 - Global mute toggle (Shift + ⌘ + M)
 - Global video toggle (Shift + ⌘ + O)
-- Global leave meeting (Shift + ⌘ + B)
+- Global leave meeting (Shift + ⌘ + H)
+- Global toggle sharing (Shift + ⌘ + E)
 
 I've commented each AppleScript thoroughly so it should easy to understand what each script is doing. Essentially, each script simply switches the focus to Microsoft Teams, sends the hotkey, and then switches back to the application that was in focus previously.
 
@@ -15,7 +16,7 @@ I've commented each AppleScript thoroughly so it should easy to understand what 
 
 The .applescript files are the plaintext AppleScripts and there are corresponding compiled .scpt versions for each script. You can execute either version but executing the compiled .scpt version is technically more performant.
 
-The way in which I use these AppleScripts are via an Elgato Stream Deck. Using the Stream Deck, create a button with a System > Open action and set the 'App / File' field to the full path of the .scpt file. I've also included the icons I use for my buttons (see the icon-*.png files in this repository). Note that Stream Deck will need the `Automation` persmission under MacOS System Preferences > Security & Privacy > Automation. The first time you press the Stream Deck button MacOS should prompt you to grant this permission to Stream Deck.
+The way in which I use these AppleScripts are via an Loupedeck S+. Using the LoupeDeck, create a button with a Assign Custom action and select AppleScript. In the dialog box the 'App / File' field to the full path of the .scpt file. I've also included the icons I use for my buttons (see the icon-*.png files in this repository). Note that Loupedeck will need the `Automation` persmission under MacOS System Preferences > Security & Privacy > Automation. The first time you press the Loupedeck button MacOS should prompt you to grant this permission to Loupedeck.
 
 ![](stream-deck-screenshot.png)
 ![](stream-deck-automation-permission-screenshot.png)
@@ -35,6 +36,10 @@ I welcome any contributions via pull requests -- especially fixes for edge cases
 # License
 
 Copyright 2021 Kevin Shekleton
+
+Modifed code in this repository from orginal source
+
+Copyright 2022 Justin McDowell
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
